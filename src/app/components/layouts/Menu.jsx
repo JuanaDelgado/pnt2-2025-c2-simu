@@ -11,6 +11,8 @@ const Menu = () => {
     { name: 'Beers', path: '/beers', icon: <FaBeer className="navIcon" /> },
     { name: 'Administración', path: '/admin', icon: <FaClipboardList className="navIcon" /> },
     { name: 'Tareas', path: '/tasks', icon: <FaTasks className="navIcon" /> },
+    //Agregar peli
+    { name: 'Peliculas', path: '/peliculas', icon: <FaTasks className="navIcon" /> }
   ];
 
   const pathname = usePathname();

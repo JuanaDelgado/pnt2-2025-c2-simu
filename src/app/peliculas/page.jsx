@@ -12,7 +12,9 @@ export default function Home() {
   useEffect(() => {
     async function fetchMovies() {
       try {
-        const response = await fetch(`https://mflixbackend.azurewebsites.net/api/movies?pageSize=10&page=${page}`);
+        //Punto 2
+        //Aca cambie 10 por 30
+        const response = await fetch(`https://mflixbackend.azurewebsites.net/api/movies?pageSize=30&page=${page}`);
         const data = await response.json();
         setMovies(data);
         setLoading(false);

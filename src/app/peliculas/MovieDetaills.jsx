@@ -1,9 +1,5 @@
-import React, { useState } from 'react';
-import './peliculas.css';
-import { FaTasks, FaUserPlus} from 'react-icons/fa';
-export default function MovieCard({ movie }) {
+export default function MovieDetaills({ movie }) {
   const [imageError, setImageError] = useState(false);
-  const [follow, setFollow] = useState(false);
 
   const handleImageError = () => {
     setImageError(true);
@@ -26,7 +22,6 @@ export default function MovieCard({ movie }) {
         </div>
       )}
       <p className="movie-title">{movie.title}</p>
-      <button onClick={() => setFollow(!follow)}>{follow ? (<FaTasks className="navIcon"></FaTasks>): (<FaUserPlus className="navIcon"></FaUserPlus>)}</button>
       {/*Punto 2*/}
       <p className="movie-fullplot">{movie.fullplot}</p>
     </div>

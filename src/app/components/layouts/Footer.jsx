@@ -1,6 +1,7 @@
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
+    //Agregar Peli
     return (
         <footer className="footer">
             <div className="footerContainer">

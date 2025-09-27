@@ -1,12 +1,13 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 import './peliculas.css';
+import Link from 'next/link';
 
 export default function MovieList({ movies }) {
   return (
     <div className="movie-grid">
       {movies.map((movie) => (
-        <MovieCard key={movie._id} movie={movie} />
+          <MovieCard key={movie._id} movie={movie} />
       ))}
     </div>
   );

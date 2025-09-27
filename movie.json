@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "573a1391f29313caabcd7616",
+        "plot": "Salome, the daughter of Herodias, seduces her step-father/uncle Herod, governor of Judea, with a salacious dance. In return, he promises her the head of the prophet John the Baptist.",
+        "genres": [
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "runtime": 72,
+        "cast": [
+            "Mitchell Lewis",
+            "Alla Nazimova",
+            "Rose Dione",
+            "Earl Schenck"
+        ],
+        "num_mflix_comments": 2,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjA0MTY4MzI2OV5BMl5BanBnXkFtZTgwNTMyODg5MTE@._V1_SY1000_SX677_AL_.jpg",
+        "title": "Salomè",
+        "fullplot": "Salome, the daughter of Herodias, seduces her step-father/uncle Herod, governor of Judea, with a salacious dance. In return, he promises her the head of the prophet John the Baptist.",
+        "countries": [
+            "USA"
+        ],
+        "released": "1923-02-15T00:00:00.000Z",
+        "directors": [
+            "Charles Bryant",
+            "Alla Nazimova"
+        ],
+        "writers": [
+            "Oscar Wilde (play)",
+            "Natacha Rambova (scenario)"
+        ],
+        "awards": {
+            "wins": 1,
+            "nominations": 0,
+            "text": "1 win."
+        },
+        "lastupdated": "2015-04-26 00:03:19.913000000",
+        "year": 1922,
+        "imdb": {
+            "rating": 6.6,
+            "votes": 466,
+            "id": 13571
+        },
+        "type": "movie",
+        "tomatoes": {
+            "viewer": {
+                "rating": 3.9,
+                "numReviews": 310,
+                "meter": 70
+            },
+            "fresh": 3,
+            "critic": {
+                "rating": 6.5,
+                "numReviews": 5,
+                "meter": 60
+            },
+            "rotten": 2,
+            "lastUpdated": "2015-06-13T19:00:41.000Z"
+        }
+    }
+]
