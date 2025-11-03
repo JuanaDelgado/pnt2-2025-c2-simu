@@ -3,6 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaTasks, FaUserPlus, FaClipboardList, FaBeer } from 'react-icons/fa';
+//1. Icono peli
+import { BiCameraMovie } from "react-icons/bi";
 import { usePathname } from 'next/navigation';
 
 const Menu = () => {
@@ -11,8 +13,7 @@ const Menu = () => {
     { name: 'Beers', path: '/beers', icon: <FaBeer className="navIcon" /> },
     { name: 'Administración', path: '/admin', icon: <FaClipboardList className="navIcon" /> },
     { name: 'Tareas', path: '/tasks', icon: <FaTasks className="navIcon" /> },
-    //Agregar peli
-    { name: 'Peliculas', path: '/peliculas', icon: <FaTasks className="navIcon" /> }
+    { name: 'Peliculas', path: '/peliculas', icon: <BiCameraMovie className="navIcon" /> },
   ];
 
   const pathname = usePathname();

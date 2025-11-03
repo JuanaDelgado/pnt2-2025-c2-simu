@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import './peliculas.css';
-import { FaTasks, FaUserPlus} from 'react-icons/fa';
+import { TbMovie } from "react-icons/tb";
+import Link from "next/link";
+import { CiStar } from "react-icons/ci";
+import { FaStar } from 'react-icons/fa';
+
 export default function MovieCard({ movie }) {
   const [imageError, setImageError] = useState(false);
-  const [follow, setFollow] = useState(false);
-
+  const [favorite, setFavorite] = useState(false);
+  
   const handleImageError = () => {
     setImageError(true);
   };
 
   return (
+    <Link href={`/peliculas/${movie._id}`}>
     <div className="movie-card">
       {movie.poster && !imageError ? (
         <img 
@@ -19,16 +24,17 @@ export default function MovieCard({ movie }) {
           onError={handleImageError}
         />
       ) : (
+        
         <div className="movie-fallback">
-          {/*Punto 2*/}
-          <FaTasks className="navIcon"></FaTasks>
-          {/*<span className="movie-fallback-text">{movie.title}</span>*/}
+          <span className="movie-fallback-text">
+            <TbMovie />
+          </span>
         </div>
       )}
       <p className="movie-title">{movie.title}</p>
-      <button onClick={() => setFollow(!follow)}>{follow ? (<FaTasks className="navIcon"></FaTasks>): (<FaUserPlus className="navIcon"></FaUserPlus>)}</button>
-      {/*Punto 2*/}
+      <button onClick={() => setFavorite(!favorite)}>{favorite ? (<FaStar className="favorite-button-favorite"></FaStar>): (<CiStar className="favorite-button"></CiStar>)}</button>
       <p className="movie-fullplot">{movie.fullplot}</p>
     </div>
+    </Link>
   );
 }

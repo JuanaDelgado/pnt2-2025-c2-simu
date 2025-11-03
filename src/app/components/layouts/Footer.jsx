@@ -1,12 +1,19 @@
+import Link from 'next/link';
+import { BsGithub } from "react-icons/bs";
+
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
-    //Agregar Peli
     return (
         <footer className="footer">
             <div className="footerContainer">
                 <div className="footerSimpleContent">
                     <p className="footerCopyright">© {currentYear} Todos los derechos reservados.</p>
+                    <Link
+                        href={"https://github.com/JuanaDelgado/pnt2-2025-c2-simu.git"}
+                    >
+                        <BsGithub className="navIcon"/>
+                    </Link>
                 </div>
             </div>
         </footer>

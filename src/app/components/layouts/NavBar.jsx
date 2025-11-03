@@ -11,9 +11,7 @@ import Notifications from './Notifications';
 import CurrentUser from './CurrentUser';
 
 export default function Navbar() {
-  // TODO: Obtener el usuario del local storage una vez hecho el login
-
-  
+  // TODO: Obtener el usuario del local storage una vez hecho el login  
     const { currentUser, logout } = {currentUser: {
     id: '15',
     name: 'Grady Archie',
